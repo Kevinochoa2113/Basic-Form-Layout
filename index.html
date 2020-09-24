@@ -4,18 +4,67 @@
     <meta charset="UTF-8">
     <meta name="Author" content="Kevin Ochoa Garcia">
     <!---^^^^^THIS IS REQUIRED FOR OUR GRADES IN THE FUTURE-->
-    <meta name="description" content="">
+    <meta name="description" content="Pizza Form Project">
 
     <meta property="og:image" content="KevinLogo.png">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="Pizza Form Project">
+    <meta property="og:description" content="Pizza Form Porject">
 
-    <title>Boiler Plate</title>
+    <title>Pizza Form Project</title>
     <link zrel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="KevinLogo.png" type="image/x-icon">
 </head>
 
 <body>
-
+    <form action="data.json" method="POST">
+        <fieldset>
+            <legend>User Information</legend>
+            <p>
+            <ul>
+                <li><label for= "Username">User Name</label> 
+                <input type="text" id="Username" Username="user.name"></li>
+                <br>
+                <li><label for= "Password">Password</label> 
+                <input type="text" id="Password" Password="user.password"></li>
+            </ul>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>What Drink Do You Want?</legend>
+            <p>
+            <ul>
+                <li><input type="radio" id="drink" name="user.drinktype"><label for="drink">Coke</label><br></li>
+                <li><input type="radio" id="drink" name="user.drinktype"><label for="drink">Diet Coke</label><br></li>
+                <li><input type="radio" id="drink" name="user.drinktype"><label for="drink">Sprite</label><br></li>
+                <li><input type="radio" id="drink" name="user.drinktype"><label for="drink">Water</label><br></li>
+            </ul>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Pizza Preference</legend>
+            <p>
+            <ul>
+                <li><input type="checkbox" id="pizza" name="user.pizzatype"><label for="pizza">Plain</label><br></li>
+                <li><input type="checkbox" id="pizza" name="user.pizzatype"><label for="pizza">Pepperoni</label><br></li>
+                <li><input type="checkbox" id="pizza" name="user.pizzatype"><label for="pizza">Chicken</label><br></li>
+                <li><input type="checkbox" id="pizza" name="user.pizzatype"><label for="pizza">Sausage</label><br></li>
+            </ul>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>User Information</legend>
+            <p>
+            <ul>
+                <li><label for= "Special Instructions">Special Instructions:</label> 
+                    <br>
+                <textarea id="specialinstructions" name="user.specialinstrcuctions" cols="40" rows="4"></textarea>
+                </li>
+            </ul>
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+        </form>
 </body>
 </html>
